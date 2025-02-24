@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location Selector</title>
+  <!-- Load Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select Event Location</h1>
+
+  <!-- Search Box for Address Input -->
+  <input id="searchBox" type="text" placeholder="Search for a location..." />
+
+  <!-- Map Container -->
+  <div id="map"></div>
+
+  <!-- Display Selected Location Details -->
+  <div>
+    <p><strong>Selected Address:</strong> <span id="selectedAddress"></span></p>
+    <p><strong>Latitude:</strong> <span id="latitude"></span></p>
+    <p><strong>Longitude:</strong> <span id="longitude"></span></p>
+  </div>
+
+  <!-- Frontend JavaScript for Map Interaction -->
+  <script src="locationSelector.js"></script>
+</body>
+</html>

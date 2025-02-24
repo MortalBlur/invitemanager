@@ -1,0 +1,19 @@
+project/
+├── models/
+│   ├── User.js          // Defines the User schema and methods
+│   ├── Event.js         // Defines the Event schema
+│   ├── Invite.js        // Defines the Invite schema
+├── routes/
+│   ├── authRoutes.js    // Handles user authentication (Google OAuth, Email/OTP)
+│   ├── eventRoutes.js   // Handles event creation and management
+│   ├── inviteRoutes.js  // Handles invite creation, RSVP logic, and iCAL generation
+├── middleware/
+│   ├── authMiddleware.js // Middleware to authenticate users using JWT
+├── utils/
+│   ├── timezoneUtils.js  // Utility functions for timezone lookup
+├── public/
+│   ├── index.html        // Frontend HTML for location selection
+│   ├── locationSelector.js // Frontend JavaScript for Google Maps integration
+├── .env                 // Environment variables for configuration
+├── app.js               // Main application entry point
+└── package.json         // Lists project dependencies and scripts
